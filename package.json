@@ -1,0 +1,67 @@
+{
+  "name": "devlog-ai",
+  "version": "1.0.0",
+  "description": "🚀 AI-powered developer logging assistant - Automatically capture, categorize, and retrieve your development workflow",
+  "main": "dist/index.js",
+  "bin": {
+    "devlog": "dist/cli.js",
+    "dl": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/cli.ts",
+    "start": "node dist/cli.js",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "developer-tools",
+    "logging",
+    "ai",
+    "productivity",
+    "cli",
+    "terminal",
+    "notes",
+    "knowledge-management"
+  ],
+  "author": "DevLog AI Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/devlog-ai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/devlog-ai/issues"
+  },
+  "homepage": "https://github.com/yourusername/devlog-ai#readme",
+  "dependencies": {
+    "commander": "^12.0.0",
+    "chalk": "^4.1.2",
+    "inquirer": "^8.2.6",
+    "ora": "^5.4.1",
+    "node-cron": "^3.0.3",
+    "sqlite3": "^5.1.7",
+    "fuse.js": "^7.0.0",
+    "dayjs": "^1.11.11",
+    "clipboardy": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "@types/inquirer": "^8.2.10",
+    "@types/node-cron": "^3.0.11",
+    "typescript": "^5.4.5",
+    "ts-node": "^10.9.2",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.12",
+    "ts-jest": "^29.1.4",
+    "eslint": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^7.11.0",
+    "@typescript-eslint/parser": "^7.11.0",
+    "prettier": "^3.2.5"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
